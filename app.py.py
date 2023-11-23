@@ -4,7 +4,6 @@ import pickle
 from sklearn.metrics.pairwise import linear_kernel
 import string
 import nltk
-import nltk
 nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
