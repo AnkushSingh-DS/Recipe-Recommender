@@ -31,7 +31,8 @@ with open('model.pkl', 'rb') as file:
 with open('vectorizer.pkl', 'rb') as file:
     tfidf_vectorizer = pickle.load(file)
 
-data = pd.read_csv('recipes.csv')    
+# Load the recipes data
+data = pd.read_csv('pre_processed.csv')   
 
 ps = PorterStemmer()
 
@@ -183,6 +184,15 @@ st.sidebar.info(
 
     Enjoy exploring new recipes and happy cooking!
     """
+)
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
 )
 
 if __name__ == "__main__":
