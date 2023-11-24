@@ -145,7 +145,7 @@ def main():
 
 # User Input
     st.markdown('<p class="input-label" style="padding-bottom: 0px;"><b>Enter Ingredients (comma-separated)</b></p>', unsafe_allow_html=True)
-    ingredients = st.text_area("", "soybeans, cottage cheese", key='ingredients', height=100)
+    ingredients = st.text_area("", "rice, brinjal", key='ingredients', height=100)
     st.markdown('<p class="input-label" style="padding-bottom: 0px;"><b>Enter Total Time (minutes)</b></p>', unsafe_allow_html=True)
     total_time = st.slider("", 0, 120, 60, key='total_time')
 
